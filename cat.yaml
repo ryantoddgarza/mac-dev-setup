@@ -1,0 +1,16 @@
+---
+input-files:
+  - src/introduction.md
+  - src/toc.md
+  - src/system-preferences.md
+  - src/xcode.md
+  - src/homebrew.md
+  - src/terminal.md
+  - src/git.md
+  - src/vim.md
+  - src/nodejs.md
+  - src/browsersync.md
+  - src/sass.md
+  - src/apps.md
+  - src/references.md
+...
