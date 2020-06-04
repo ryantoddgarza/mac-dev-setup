@@ -79,6 +79,26 @@ both keys.
   - Check
       - *Automatically hide and show the Dock*
 
+Remove *workspace auto-switching* by running:
+
+    defaults write com.apple.dock workspaces-auto-swoosh -bool NO
+    killall Dock
+
+### Mission Control
+
+Prevent Spaces from rearranging.
+
+Open *System Preferences \> Mission Control* and uncheck *Automatically
+rearrange spaces based on most recent use*.
+
+### Spotlight
+
+By default, Spotlight sends queries to Apple. Unless you want this
+feature, turn it off.
+
+Open *System Preferences \> Spotlight \> Search Results* and deselect
+*Spotlight Suggestions*.
+
 ### Accessibility
 
   - *Display* Check *Reduce transparency*
@@ -255,7 +275,7 @@ Install tmux via Homebrew:
 #### Tmux config
 
 Clone the .tmux.conf file from
-[github.com/ryantoddgarza/dev/tree/master/dotfiles](https://github.com/ryantoddgarza/dev/tree/master/dotfiles)
+[github.com/ryantoddgarza/dotfiles](https://github.com/ryantoddgarza/dotfiles)
 into the home directory.
 
 ### Rsync
@@ -427,7 +447,7 @@ To install the latest version, use Homebrew:
 ### Vim config
 
 Clone the approprite .vim files from
-[github.com/ryantoddgarza/dev/tree/master/dotfiles](https://github.com/ryantoddgarza/dev/tree/master/dotfiles)
+[github.com/ryantoddgarza/dotfiles](https://github.com/ryantoddgarza/dotfiles)
 into the home directory.
 
 ### The Ultimate vimrc

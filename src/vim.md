@@ -12,7 +12,7 @@ brew install vim
 
 ### Vim config
 
-Clone the approprite .vim files from [github.com/ryantoddgarza/dev/tree/master/dotfiles](https://github.com/ryantoddgarza/dev/tree/master/dotfiles) into the home directory.
+Clone the approprite .vim files from [github.com/ryantoddgarza/dotfiles](https://github.com/ryantoddgarza/dotfiles) into the home directory.
 
 ### The Ultimate vimrc
 

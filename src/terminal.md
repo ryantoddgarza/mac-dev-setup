@@ -81,7 +81,7 @@ brew install tmux
 
 #### Tmux config
 
-Clone the .tmux.conf file from [github.com/ryantoddgarza/dev/tree/master/dotfiles](https://github.com/ryantoddgarza/dev/tree/master/dotfiles) into the home directory.
+Clone the .tmux.conf file from [github.com/ryantoddgarza/dotfiles](https://github.com/ryantoddgarza/dotfiles) into the home directory.
 
 ### Rsync
 

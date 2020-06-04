@@ -43,6 +43,25 @@ For keyboards not set up for macOS, swap the *Option* and *Command* keys. Open *
 - Check
     - *Automatically hide and show the Dock*
 
+Remove *workspace auto-switching* by running:
+
+```
+defaults write com.apple.dock workspaces-auto-swoosh -bool NO
+killall Dock
+```
+
+### Mission Control
+
+Prevent Spaces from rearranging.
+
+Open *System Preferences > Mission Control* and uncheck *Automatically rearrange spaces based on most recent use*.
+
+### Spotlight
+
+By default, Spotlight sends queries to Apple. Unless you want this feature, turn it off.
+
+Open *System Preferences > Spotlight > Search Results* and deselect *Spotlight Suggestions*.
+
 ### Accessibility
 
 - *Display* Check *Reduce transparency*
