@@ -3,7 +3,7 @@ target := README.md
 
 $(target) : $(src)/*.md
 	pandoc \
-	  --defaults cat.yaml \
+	  --defaults concat.yaml \
 	  --to=gfm \
 	  -o $@
 

@@ -49,7 +49,7 @@ The configuration file for zsh is called .zshrc and lives in your home folder (~
 
 ### Oh My Zsh
 
-*This is a temporary recommendation until a solid *.zshrc* is built up.*
+This is a temporary recommendation until a solid *.zshrc* is built up.
 
 [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) is an open source, community-driven framework for managing your zsh configuration. It comes with a bunch of features out of the box and improves your terminal experience.
 

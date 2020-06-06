@@ -240,6 +240,8 @@ folder (\~/.zshrc).
 
 ### Oh My Zsh
 
+This is a temporary recommendation until a solid *.zshrc* is built up.
+
 [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) is an open
 source, community-driven framework for managing your zsh configuration.
 It comes with a bunch of features out of the box and improves your
@@ -254,10 +256,23 @@ shell instance or run:
 
     source ~/.zshrc
 
-#### Fix Folder permission “Insecure completion-dependent directories detected”
+#### Fix Folder permission
 
-Add `ZSH_DISABLE_COMPFIX=true` to the top of your .zshrc file. Reload
-the file by running `source .zshrc`.
+*TODO: Confirm that the second resolution prevents the need for the
+first fix.*
+
+1.  For the error `Insecure completion-dependent directories detected`,
+    add `ZSH_DISABLE_COMPFIX=true` to the top of your .zshrc file.
+    Reload the file by running `source .zshrc`.
+2.  For the error `zsh compinit: insecure directories, run compaudit for
+    list.`, run:
+
+<!-- end list -->
+
+    compaudit | xargs chmod g-w
+
+Details available at [Stephen Weiss’
+Blog](https://stephencharlesweiss.com/blog/2020-03-28/zsh-compinit-insecure-directories/).
 
 ### Tmux
 
