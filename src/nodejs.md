@@ -56,7 +56,7 @@ nvm install --lts=Erbium
 Switching between versions
 
 ```
-nvm use 12.16.X
+nvm use 12.6.3 # replace with desired version
 ```
 
 ### Set Default Version
@@ -67,7 +67,7 @@ nvm alias default 12.6.3 # replace with desired version
 
 ### Troubleshooting
 
-### Fix the "Missing write access" error when using npm
+#### Fix the "Missing write access" error when using npm
 
 *Pay attention to the folder listed by the error message. If it’s different, update the chown command accordingly.*
 

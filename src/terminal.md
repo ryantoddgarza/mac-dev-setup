@@ -65,7 +65,7 @@ To apply any configuration changes you make you need to either start new shell i
 source ~/.zshrc
 ```
 
-#### Fix Folder permission
+#### Insecure directories fix
 
 *TODO: Confirm that the second resolution prevents the need for the first fix.*
 

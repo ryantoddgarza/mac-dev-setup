@@ -256,7 +256,7 @@ shell instance or run:
 
     source ~/.zshrc
 
-#### Fix Folder permission
+#### Insecure directories fix
 
 *TODO: Confirm that the second resolution prevents the need for the
 first fix.*
@@ -576,7 +576,7 @@ LTS arguments.
 
 Switching between versions
 
-    nvm use 12.16.X
+    nvm use 12.6.3 # replace with desired version
 
 ### Set Default Version
 
@@ -584,7 +584,7 @@ Switching between versions
 
 ### Troubleshooting
 
-### Fix the “Missing write access” error when using npm
+#### Fix the “Missing write access” error when using npm
 
 *Pay attention to the folder listed by the error message. If it’s
 different, update the chown command accordingly.*
