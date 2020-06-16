@@ -9,8 +9,7 @@ input-files:
   - src/git.md
   - src/vim.md
   - src/nodejs.md
-  - src/browsersync.md
-  - src/sass.md
+  - src/cli-extensions.md
   - src/apps.md
   - src/references.md
 ...

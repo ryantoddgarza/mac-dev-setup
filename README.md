@@ -11,7 +11,6 @@
       - [Zsh](#zsh)
       - [Oh My Zsh](#oh-my-zsh)
       - [Tmux](#tmux)
-      - [rsync](#rsync)
   - [Git](#git)
       - [SSH Config for GitHub](#ssh-config-for-github)
       - [Git Ignore (global](#git-ignore-global)
@@ -19,9 +18,10 @@
   - [Vim](#vim)
       - [Plugins](#plugins)
   - [Node.js](#nodejs)
-  - [Browsersync](#browsersync)
-  - [SASS](#sass)
-  - [Local React Environment](#local-react-environment)
+  - [CLI Extensions](#cli-extensions)
+      - [Browsersync](#browsersync)
+      - [rsync](#rsync)
+      - [SASS](#sass)
   - [Apps](#apps)
   - [References](#references)
 
@@ -293,50 +293,6 @@ Clone the .tmux.conf file from
 [github.com/ryantoddgarza/dotfiles](https://github.com/ryantoddgarza/dotfiles)
 into the home directory.
 
-### Rsync
-
-Rsync is a fast and extraordinarily versatile file copying tool. It can
-copy locally, to/from another host over any remote shell, or to/from a
-remote rsync daemon. It offers a large number of options that control
-every aspect of its behavior and permit very flexible specification of
-the set of files to be copied. It is famous for its delta-transfer
-algorithm, which reduces the amount of data sent over the network by
-sending only the differences between the source files and the existing
-files in the destination. Rsync is widely used for backups and mirroring
-and as an improved copy command for everyday use.
-
-#### Update rsync With Homebrew
-
-Install the latest version via Homebrew:
-
-    brew install rsync
-
-Check version
-
-    rsync --version
-
-#### Basic Usage
-
-The basic syntax is:
-
-    rsync <options> <source> <destination>
-
-#### Usage - Mirror Directory
-
-    rsync -acXNv --delete <source> <destination>
-
-The options used are:
-
-  - `-a`, `--archive` archive mode; equals `-rlptgoD (no -H,-A,-X)`
-  - `-c`, `--checksum` skip based on checksum, not mod-time & size
-  - `-X`, `--xattrs` preserve extended attributes
-  - `-N`, `--crtimes` preserve create times (newness)
-  - `-v`, `--verbose` increase verbosity
-
-#### Documentation
-
-  - [rsync Manual](https://www.manpagez.com/man/1/rsync/)
-
 ## Git
 
 [Git](https://git-scm.com/) is a free and open source distributed
@@ -593,7 +549,9 @@ Run this command:
 
     sudo chown -R $USER /usr/local/lib/node_modules
 
-## Browsersync
+## CLI Extensions
+
+### Browsersync
 
 [browsersync.io](https://www.browsersync.io/) Synchronized browser
 testing.
@@ -613,7 +571,51 @@ default index.html file you have in the folder).
     # abbreviated options are as follows
     browser-sync start -sf .
 
-## SASS
+### Rsync
+
+Rsync is a fast and extraordinarily versatile file copying tool. It can
+copy locally, to/from another host over any remote shell, or to/from a
+remote rsync daemon. It offers a large number of options that control
+every aspect of its behavior and permit very flexible specification of
+the set of files to be copied. It is famous for its delta-transfer
+algorithm, which reduces the amount of data sent over the network by
+sending only the differences between the source files and the existing
+files in the destination. Rsync is widely used for backups and mirroring
+and as an improved copy command for everyday use.
+
+#### Update rsync With Homebrew
+
+Install the latest version via Homebrew:
+
+    brew install rsync
+
+Check version:
+
+    rsync --version
+
+#### Basic Usage
+
+The basic syntax is:
+
+    rsync <options> <source> <destination>
+
+#### Usage - Mirror Directory
+
+    rsync -acXNv --delete <source> <destination>
+
+The options used are:
+
+  - `-a`, `--archive` archive mode; equals `-rlptgoD (no -H,-A,-X)`
+  - `-c`, `--checksum` skip based on checksum, not mod-time & size
+  - `-X`, `--xattrs` preserve extended attributes
+  - `-N`, `--crtimes` preserve create times (newness)
+  - `-v`, `--verbose` increase verbosity
+
+#### Documentation
+
+  - [rsync Manual](https://www.manpagez.com/man/1/rsync/)
+
+### SASS
 
 [Sass](https://sass-lang.com/) is a stylesheet language that’s compiled
 to CSS. It allows you to use variables, nested rules, mixins, functions,
