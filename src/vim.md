@@ -16,7 +16,7 @@ Clone the approprite .vim files from [github.com/ryantoddgarza/dotfiles](https:/
 
 ### The Ultimate vimrc
 
-*This is a temporary recommendation until a solid *.vimrc* is built up.*
+*This is a temporary recommendation until a solid .vimrc is built up.*
 
 [The Ultimate vimrc](https://github.com/amix/vimrc) is a collection of vimrc configurations to make easy the usage of vim.
 
