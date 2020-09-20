@@ -1,6 +1,6 @@
 ## Node.js
 
-Node.js is a JavaScript runtime built on Chrome's V8 JavaScript engine.
+[Node.js](https://nodejs.org/) is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
 ### Node Version Manager
 
@@ -31,6 +31,7 @@ To see what versions are available to be installed:
 ```
 nvm ls-remote
 ```
+
 ### Install Node.js Version
 
 To download, compile, and install the latest release of node, run:
