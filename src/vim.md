@@ -58,12 +58,15 @@ More useful color schemes at [github.com/rafi/awesome-vim-colorschemes](https://
 
 ### Plugins
 
+- [ale](https://github.com/dense-analysis/ale): Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support.
+- [auto-pairs](https://github.com/jiangmiao/auto-pairs): Insert or delete brackets, parens, quotes in pair.
+- [emmet-vim](https://github.com/mattn/emmet-vim): emmet-vim is a vim plug-in which provides support for expanding abbreviations similar to emmet.
 - [vim-airline](https://github.com/vim-airline/vim-airline): Lean & mean status/tabline for vim that's light as air.
 - [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes): A collection of themes for vim-airline.
-- [Auto Pairs](https://github.com/jiangmiao/auto-pairs): Insert or delete brackets, parens, quotes in pair.
-- [commentary.vim](https://github.com/tpope/vim-commentary): Comment stuff out.
-- [surround.vim](https://github.com/tpope/vim-surround): Quoting/parenthesizing made simple.
-- [vinegar.vim](https://github.com/tpope/vim-vinegar): Combine with netrw to create a delicious salad dressing.
-- [Emmet-vim](https://github.com/mattn/emmet-vim): emmet-vim is a vim plug-in which provides support for expanding abbreviations similar to emmet.
-- [Vim-Prettier](https://github.com/prettier/vim-prettier): A vim plugin wrapper for prettier, pre-configured with custom default prettier settings.
+- [vim-commentary](https://github.com/tpope/vim-commentary): Comment stuff out.
+- [vim-javascript](https://github.com/pangloss/vim-javascript): Vastly improved Javascript indentation and syntax support in Vim.
+- [vim-jsx-pretty](https://github.com/MaxMEllon/vim-jsx-pretty): JSX and TSX syntax pretty highlighting for vim.
+- [vim-prettier](https://github.com/prettier/vim-prettier): A vim plugin wrapper for prettier, pre-configured with custom default prettier settings.
+- [vim-surround](https://github.com/tpope/vim-surround): Quoting/parenthesizing made simple.
+- [vim-vinegar](https://github.com/tpope/vim-vinegar): Combine with netrw to create a delicious salad dressing.
 

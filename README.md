@@ -240,7 +240,7 @@ folder (\~/.zshrc).
 
 ### Oh My Zsh
 
-This is a temporary recommendation until a solid *.zshrc* is built up.
+*This is a temporary recommendation until a solid .zshrc is built up.*
 
 [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) is an open
 source, community-driven framework for managing your zsh configuration.
@@ -423,8 +423,7 @@ into the home directory.
 
 ### The Ultimate vimrc
 
-*This is a temporary recommendation until a solid *.vimrc\* is built
-up.\*
+*This is a temporary recommendation until a solid .vimrc is built up.*
 
 [The Ultimate vimrc](https://github.com/amix/vimrc) is a collection of
 vimrc configurations to make easy the usage of vim.
@@ -465,28 +464,36 @@ More useful color schemes at
 
 ### Plugins
 
+  - [ale](https://github.com/dense-analysis/ale): Check syntax in Vim
+    asynchronously and fix files, with Language Server Protocol (LSP)
+    support.
+  - [auto-pairs](https://github.com/jiangmiao/auto-pairs): Insert or
+    delete brackets, parens, quotes in pair.
+  - [emmet-vim](https://github.com/mattn/emmet-vim): emmet-vim is a vim
+    plug-in which provides support for expanding abbreviations similar
+    to emmet.
   - [vim-airline](https://github.com/vim-airline/vim-airline): Lean &
     mean status/tabline for vim that’s light as air.
   - [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes):
     A collection of themes for vim-airline.
-  - [Auto Pairs](https://github.com/jiangmiao/auto-pairs): Insert or
-    delete brackets, parens, quotes in pair.
-  - [commentary.vim](https://github.com/tpope/vim-commentary): Comment
+  - [vim-commentary](https://github.com/tpope/vim-commentary): Comment
     stuff out.
-  - [surround.vim](https://github.com/tpope/vim-surround):
-    Quoting/parenthesizing made simple.
-  - [vinegar.vim](https://github.com/tpope/vim-vinegar): Combine with
-    netrw to create a delicious salad dressing.
-  - [Emmet-vim](https://github.com/mattn/emmet-vim): emmet-vim is a vim
-    plug-in which provides support for expanding abbreviations similar
-    to emmet.
-  - [Vim-Prettier](https://github.com/prettier/vim-prettier): A vim
+  - [vim-javascript](https://github.com/pangloss/vim-javascript): Vastly
+    improved Javascript indentation and syntax support in Vim.
+  - [vim-jsx-pretty](https://github.com/MaxMEllon/vim-jsx-pretty): JSX
+    and TSX syntax pretty highlighting for vim.
+  - [vim-prettier](https://github.com/prettier/vim-prettier): A vim
     plugin wrapper for prettier, pre-configured with custom default
     prettier settings.
+  - [vim-surround](https://github.com/tpope/vim-surround):
+    Quoting/parenthesizing made simple.
+  - [vim-vinegar](https://github.com/tpope/vim-vinegar): Combine with
+    netrw to create a delicious salad dressing.
 
 ## Node.js
 
-Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine.
+[Node.js](https://nodejs.org/) is a JavaScript runtime built on Chrome’s
+V8 JavaScript engine.
 
 ### Node Version Manager
 
