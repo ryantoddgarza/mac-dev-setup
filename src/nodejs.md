@@ -2,68 +2,44 @@
 
 [Node.js](https://nodejs.org/) is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
+### Installation
+
+Node.js can be installed in different ways. One very convenient way to install Node.js is through a package manager like Homebrew.
+
+```sh
+brew install node
+```
+
+Alternatively, Node version managers allow you to install and switch between multiple versions of Node.js and npm on your system so you can test your applications on multiple versions.
+
 ### Node Version Manager
 
-nvm is a version manager for node.js, designed to be installed per-user, and invoked per-shell.
+[nvm](https://github.com/nvm-sh/nvm) is a version manager for node.js, designed to be installed per-user, and invoked per-shell.
+
+#### Install
 
 Install **Node Version Manager** with cURL.
 
-```
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.35.2/install.sh | bash
+```sh
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.36.0/install.sh | bash
 ```
 Verify installation:
 
-```
+```sh
 command -v nvm
 ```
 which should output ``nvm`` if the installation was successful.
 
-### Listing Versions
+### Basic usage
 
-To see what versions are installed:
-
-```
-nvm ls
-```
-
-To see what versions are available to be installed:
-
-```
-nvm ls-remote
-```
-
-### Install Node.js Version
-
-To download, compile, and install the latest release of node, run:
-
-```
-nvm install node # "node" is an alias for the latest version
-```
-
-To install a specific version of node:
-
-```
-nvm install 12.6.3 # replace with desired version
-```
-
-Node has a schedule for long-term support (LTS). Installation supports LTS arguments.
-
-```
-nvm install --lts=Erbium
-```
-
-### Using Versions
-
-Switching between versions
-
-```
-nvm use 12.6.3 # replace with desired version
-```
-
-### Set Default Version
-
-```
-nvm alias default 12.6.3 # replace with desired version
+```sh
+nvm ls                          # List installed versions
+nvm ls-remote                   # List versions available to be installed
+nvm install node                # Install the latest stable version
+nvm install <version>           # Install a specific version
+nvm install --lts=<LTS name>    # Install from long term support versions
+nvm use <version>               # Switch between versions
+nvm alias default <version>     # Set default version with alias
 ```
 
 ### Troubleshooting
@@ -74,7 +50,7 @@ nvm alias default 12.6.3 # replace with desired version
 
 Run this command:
 
-```
+```sh
 sudo chown -R $USER /usr/local/lib/node_modules
 ```
 

@@ -1,83 +1,86 @@
-# macOS Developer Environment Setup
+macOS Developer Environment Setup
+=================================
 
-## Table of Contents
+Table of Contents
+-----------------
 
-  - [Introduction](#macos-developer-environment-setup)
-  - [System Preferences](#system-preferences)
-  - [Xcode](#xcode)
-  - [Homebrew](#homebrew)
-  - [Terminal](#terminal)
-      - [iTerm2](#iterm2)
-      - [Zsh](#zsh)
-      - [Oh My Zsh](#oh-my-zsh)
-      - [Tmux](#tmux)
-  - [Git](#git)
-      - [SSH Config for GitHub](#ssh-config-for-github)
-      - [Git Ignore (global](#git-ignore-global)
-      - [Git GUIs](#git-guis)
-  - [Vim](#vim)
-      - [Plugins](#plugins)
-  - [Node.js](#nodejs)
-  - [CLI Extensions](#cli-extensions)
-      - [Browsersync](#browsersync)
-      - [rsync](#rsync)
-      - [SASS](#sass)
-  - [Apps](#apps)
-  - [References](#references)
+-   [Introduction](#macos-developer-environment-setup)
+-   [System Preferences](#system-preferences)
+-   [Xcode](#xcode)
+-   [Homebrew](#homebrew)
+-   [Terminal](#terminal)
+    -   [iTerm2](#iterm2)
+    -   [Zsh](#zsh)
+    -   [Oh My Zsh](#oh-my-zsh)
+    -   [Tmux](#tmux)
+-   [Git](#git)
+    -   [SSH Config for GitHub](#ssh-config-for-github)
+    -   [Git Ignore (global](#git-ignore-global)
+    -   [Git GUIs](#git-guis)
+-   [Vim](#vim)
+    -   [Plugins](#plugins)
+-   [Node.js](#nodejs)
+-   [CLI Extensions](#cli-extensions)
+    -   [Browsersync](#browsersync)
+    -   [rsync](#rsync)
+    -   [SASS](#sass)
+-   [Apps](#apps)
+-   [References](#references)
 
-## System Preferences
+System Preferences
+------------------
 
 ### Initial Setup
 
 The first thing you should do is update your OS to the latest version to
-have a more secure OS. To do that go: *Apple menu () \> About This Mac
-\> Software Update*.
+have a more secure OS. To do that go: *Apple menu () &gt; About This
+Mac &gt; Software Update*.
 
 ### Users & Groups
 
-  - Enable *Show fast user switching menu* and select desired display
+-   Enable *Show fast user switching menu* and select desired display
     option.
-  - Set up Password, Apple ID, Picture, etc.
+-   Set up Password, Apple ID, Picture, etc.
 
 ### Keyboard
 
-Open *System Preferences \> Keyboard*.
+Open *System Preferences &gt; Keyboard*.
 
-  - Set *Key Repeat* to *Fast* and Delay Until Repeat to one notch below
+-   Set *Key Repeat* to *Fast* and Delay Until Repeat to one notch below
     *Short*.
-  - Remap *CapsLock* to *Esc* for quicker Vim mode switching. Click the
+-   Remap *CapsLock* to *Esc* for quicker Vim mode switching. Click the
     *Modifier Keys…* button. In the dialog you can choose to map the
     caps lock key to escape.
 
 #### Filco Majestouch
 
 For keyboards not set up for macOS, swap the *Option* and *Command*
-keys. Open *System Preferences \> Keyboard \> Modifier Keys…* and remap
-both keys.
+keys. Open *System Preferences &gt; Keyboard &gt; Modifier Keys…* and
+remap both keys.
 
 ### Trackpad
 
-  - Point & Click
-      - Enable *Tap to click with one finger*
-  - Scroll & Zoom
-      - Uncheck all except *Zoom in or out* and *Scroll direction:
+-   Point & Click
+    -   Enable *Tap to click with one finger*
+-   Scroll & Zoom
+    -   Uncheck all except *Zoom in or out* and *Scroll direction:
         Natural*
-  - More Gestures
-      - Uncheck *Notification Center*
+-   More Gestures
+    -   Uncheck *Notification Center*
 
 ### Display
 
-  - Uncheck *Automatically adjust brightness*
-  - Uncheck *Show mirroring options in the menu bar when available*
+-   Uncheck *Automatically adjust brightness*
+-   Uncheck *Show mirroring options in the menu bar when available*
 
 ### Dock
 
-  - Uncheck
-      - *Double-click a window’s title bar to*
-      - *Animate opening applications*
-      - *Show recent applications in Dock*
-  - Check
-      - *Automatically hide and show the Dock*
+-   Uncheck
+    -   *Double-click a window’s title bar to*
+    -   *Animate opening applications*
+    -   *Show recent applications in Dock*
+-   Check
+    -   *Automatically hide and show the Dock*
 
 Remove *workspace auto-switching* by running:
 
@@ -88,46 +91,46 @@ Remove *workspace auto-switching* by running:
 
 Prevent Spaces from rearranging.
 
-Open *System Preferences \> Mission Control* and uncheck *Automatically
-rearrange spaces based on most recent use*.
+Open *System Preferences &gt; Mission Control* and uncheck
+*Automatically rearrange spaces based on most recent use*.
 
 ### Spotlight
 
 By default, Spotlight sends queries to Apple. Unless you want this
 feature, turn it off.
 
-Open *System Preferences \> Spotlight \> Search Results* and deselect
-*Spotlight Suggestions*.
+Open *System Preferences &gt; Spotlight &gt; Search Results* and
+deselect *Spotlight Suggestions*.
 
 ### Accessibility
 
-  - *Display* Check *Reduce transparency*
+-   *Display* Check *Reduce transparency*
 
 ### Sound
 
-  - Disable *Play user interface sound effects*
+-   Disable *Play user interface sound effects*
 
 ### Finder
 
-  - General
-      - Change New finder window show to open in your *Home Directory*
-  - Sidebar
-      - Add Home and your Code Directory
-      - Uncheck all Shared boxes
-      - Uncheck *Tags*
+-   General
+    -   Change New finder window show to open in your *Home Directory*
+-   Sidebar
+    -   Add Home and your Code Directory
+    -   Uncheck all Shared boxes
+    -   Uncheck *Tags*
 
 ### Menu Bar
 
-  - Remove the *Display* and *Bluetooth* icons
-  - Change battery to *Show percentage*
+-   Remove the *Display* and *Bluetooth* icons
+-   Change battery to *Show percentage*
 
 ### Desktop
 
 Right click on the *Desktop* and select *Show view options*.
 
-  - Select *Sort by: Snap to Grid*
-  - Set *Icon Size* to *48x48*
-  - Set *Label position* to *Right*
+-   Select *Sort by: Snap to Grid*
+-   Set *Icon Size* to *48x48*
+-   Set *Label position* to *Right*
 
 ### User Defaults
 
@@ -147,7 +150,8 @@ the terminal run:
 
     defaults write com.apple.screencapture location /path/to/screenshots/ && killall SystemUIServer
 
-## Xcode
+Xcode
+-----
 
 [Xcode](https://developer.apple.com/xcode/) is an integrated development
 environment for macOS containing a suite of software development tools
@@ -165,7 +169,8 @@ It will prompt you to install the command line tools. Follow the
 instructions and you’ll have Xcode and Xcode command line tools both
 installed.
 
-## Homebrew
+Homebrew
+--------
 
 [Homebrew](https://brew.sh/) calls itself “the missing package manager
 for macOS” and is an essential tool for any developer.
@@ -187,9 +192,10 @@ you should make sure everything is working by running:
     brew doctor
 
 If everything is good, you should see no warnings, and a message that
-you are “ready to brew\!”.
+you are “ready to brew!”.
 
-## Terminal
+Terminal
+--------
 
 ### iTerm2
 
@@ -222,8 +228,8 @@ Set the font in iTerm2’s preferences and change the size to 13pt.
 
 Download `Tender.itermcolors` from
 [github.com/tombell/tender-iterm2](https://github.com/tombell/tender-iterm2).
-Go to *Preferences \> Profiles \> Colors* and select *Import…* from the
-*Color Presets…* dropdown. Import the theme and select it from the
+Go to *Preferences &gt; Profiles &gt; Colors* and select *Import…* from
+the *Color Presets…* dropdown. Import the theme and select it from the
 *Color Presets…* dropdown.
 
 ### Zsh
@@ -267,10 +273,10 @@ first fix.*
 1.  For the error `Insecure completion-dependent directories detected`,
     add `ZSH_DISABLE_COMPFIX=true` to the top of your .zshrc file.
     Reload the file by running `source .zshrc`.
-2.  For the error `zsh compinit: insecure directories, run compaudit for
-    list.`, run:
+2.  For the error
+    `zsh compinit: insecure directories, run compaudit for list.`, run:
 
-<!-- end list -->
+<!-- -->
 
     compaudit | xargs chmod g-w
 
@@ -296,7 +302,8 @@ Clone the .tmux.conf file from
 [github.com/ryantoddgarza/dotfiles](https://github.com/ryantoddgarza/dotfiles)
 into the home directory.
 
-## Git
+Git
+---
 
 [Git](https://git-scm.com/) is a free and open source distributed
 version control system designed to handle everything from small to very
@@ -403,10 +410,11 @@ followed by running the command below, in terminal:
 
 I don’t use them but they exist.
 
-  - [Sourcetree](https://www.sourcetreeapp.com/)
-  - [GitHub Desktop](https://desktop.github.com/)
+-   [Sourcetree](https://www.sourcetreeapp.com/)
+-   [GitHub Desktop](https://desktop.github.com/)
 
-## Vim
+Vim
+---
 
 [Vim](https://www.vim.org/) is a highly configurable text editor built
 to make creating and changing any kind of text very efficient. It is
@@ -467,45 +475,59 @@ More useful color schemes at
 
 ### Plugins
 
-  - [ale](https://github.com/dense-analysis/ale): Check syntax in Vim
+-   [ale](https://github.com/dense-analysis/ale): Check syntax in Vim
     asynchronously and fix files, with Language Server Protocol (LSP)
     support.
-  - [auto-pairs](https://github.com/jiangmiao/auto-pairs): Insert or
+-   [auto-pairs](https://github.com/jiangmiao/auto-pairs): Insert or
     delete brackets, parens, quotes in pair.
-  - [emmet-vim](https://github.com/mattn/emmet-vim): emmet-vim is a vim
+-   [emmet-vim](https://github.com/mattn/emmet-vim): emmet-vim is a vim
     plug-in which provides support for expanding abbreviations similar
     to emmet.
-  - [vim-airline](https://github.com/vim-airline/vim-airline): Lean &
+-   [vim-airline](https://github.com/vim-airline/vim-airline): Lean &
     mean status/tabline for vim that’s light as air.
-  - [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes):
+-   [vim-airline-themes](https://github.com/vim-airline/vim-airline-themes):
     A collection of themes for vim-airline.
-  - [vim-commentary](https://github.com/tpope/vim-commentary): Comment
+-   [vim-commentary](https://github.com/tpope/vim-commentary): Comment
     stuff out.
-  - [vim-javascript](https://github.com/pangloss/vim-javascript): Vastly
+-   [vim-javascript](https://github.com/pangloss/vim-javascript): Vastly
     improved Javascript indentation and syntax support in Vim.
-  - [vim-jsx-pretty](https://github.com/MaxMEllon/vim-jsx-pretty): JSX
+-   [vim-jsx-pretty](https://github.com/MaxMEllon/vim-jsx-pretty): JSX
     and TSX syntax pretty highlighting for vim.
-  - [vim-prettier](https://github.com/prettier/vim-prettier): A vim
+-   [vim-prettier](https://github.com/prettier/vim-prettier): A vim
     plugin wrapper for prettier, pre-configured with custom default
     prettier settings.
-  - [vim-surround](https://github.com/tpope/vim-surround):
+-   [vim-surround](https://github.com/tpope/vim-surround):
     Quoting/parenthesizing made simple.
-  - [vim-vinegar](https://github.com/tpope/vim-vinegar): Combine with
+-   [vim-vinegar](https://github.com/tpope/vim-vinegar): Combine with
     netrw to create a delicious salad dressing.
 
-## Node.js
+Node.js
+-------
 
 [Node.js](https://nodejs.org/) is a JavaScript runtime built on Chrome’s
 V8 JavaScript engine.
 
+### Installation
+
+Node.js can be installed in different ways. One very convenient way to
+install Node.js is through a package manager like Homebrew.
+
+    brew install node
+
+Alternatively, Node version managers allow you to install and switch
+between multiple versions of Node.js and npm on your system so you can
+test your applications on multiple versions.
+
 ### Node Version Manager
 
-nvm is a version manager for node.js, designed to be installed per-user,
-and invoked per-shell.
+[nvm](https://github.com/nvm-sh/nvm) is a version manager for node.js,
+designed to be installed per-user, and invoked per-shell.
+
+#### Install
 
 Install **Node Version Manager** with cURL.
 
-    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.35.2/install.sh | bash
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.36.0/install.sh | bash
 
 Verify installation:
 
@@ -513,40 +535,15 @@ Verify installation:
 
 which should output `nvm` if the installation was successful.
 
-### Listing Versions
+### Basic usage
 
-To see what versions are installed:
-
-    nvm ls
-
-To see what versions are available to be installed:
-
-    nvm ls-remote
-
-### Install Node.js Version
-
-To download, compile, and install the latest release of node, run:
-
-    nvm install node # "node" is an alias for the latest version
-
-To install a specific version of node:
-
-    nvm install 12.6.3 # replace with desired version
-
-Node has a schedule for long-term support (LTS). Installation supports
-LTS arguments.
-
-    nvm install --lts=Erbium
-
-### Using Versions
-
-Switching between versions
-
-    nvm use 12.6.3 # replace with desired version
-
-### Set Default Version
-
-    nvm alias default 12.6.3 # replace with desired version
+    nvm ls                          # List installed versions
+    nvm ls-remote                   # List versions available to be installed
+    nvm install node                # Install the latest stable version
+    nvm install <version>           # Install a specific version
+    nvm install --lts=<LTS name>    # Install from long term support versions
+    nvm use <version>               # Switch between versions
+    nvm alias default <version>     # Set default version with alias
 
 ### Troubleshooting
 
@@ -559,7 +556,8 @@ Run this command:
 
     sudo chown -R $USER /usr/local/lib/node_modules
 
-## CLI Extensions
+CLI Extensions
+--------------
 
 ### Browsersync
 
@@ -577,7 +575,7 @@ system and it will create a local server (automatically displaying the
 default index.html file you have in the folder).
 
     browser-sync start --server --files .
-    
+
     # abbreviated options are as follows
     browser-sync start -sf .
 
@@ -615,15 +613,15 @@ The basic syntax is:
 
 The options used are:
 
-  - `-a`, `--archive` archive mode; equals `-rlptgoD (no -H,-A,-X)`
-  - `-c`, `--checksum` skip based on checksum, not mod-time & size
-  - `-X`, `--xattrs` preserve extended attributes
-  - `-N`, `--crtimes` preserve create times (newness)
-  - `-v`, `--verbose` increase verbosity
+-   `-a`, `--archive` archive mode; equals `-rlptgoD (no -H,-A,-X)`
+-   `-c`, `--checksum` skip based on checksum, not mod-time & size
+-   `-X`, `--xattrs` preserve extended attributes
+-   `-N`, `--crtimes` preserve create times (newness)
+-   `-v`, `--verbose` increase verbosity
 
 #### Documentation
 
-  - [rsync Manual](https://www.manpagez.com/man/1/rsync/)
+-   [rsync Manual](https://www.manpagez.com/man/1/rsync/)
 
 ### SASS
 
@@ -637,14 +635,15 @@ Install with Homebrew:
 
     brew install sass/sass/sass
 
-## Apps
+Apps
+----
 
 A list of apps that are generally good to use and can come in handy in
 day to day tasks.
 
 ### Developer Tools
 
-  - [Google Chrome](https://www.google.com/intl/en/chrome/browser/) is a
+-   [Google Chrome](https://www.google.com/intl/en/chrome/browser/) is a
     developer friendly browser with powerful development tools built in
     to it.
 
@@ -654,17 +653,18 @@ Install with Homebrew:
 
 ### Productivity
 
-  - [Dropbox](https://www.dropbox.com/) File syncing to the cloud. It
+-   [Dropbox](https://www.dropbox.com/) File syncing to the cloud. It
     syncs files across all devices (laptop, mobile, tablet), and serves
     as a backup.
-  - [Pandoc](https://pandoc.org/) a universal document converter.
+-   [Pandoc](https://pandoc.org/) a universal document converter.
 
-## References
+References
+----------
 
 Inspiration for this document.
 
-  - [sourabhbajaj.com/mac-setup/](https://sourabhbajaj.com/mac-setup/)
-  - [github.com/nicolashery/mac-dev-setup](https://github.com/nicolashery/mac-dev-setup)
-  - [stuartellis.name/articles/mac-setup](https://www.stuartellis.name/articles/mac-setup/)
-  - [michaeluloth.com/how-to-set-up-a-mac-for-web-development](https://www.michaeluloth.com/how-to-set-up-a-mac-for-web-development)
-  - [mallinson.ca/posts/5/the-perfect-web-development-environment-for-your-new-mac](https://mallinson.ca/posts/5/the-perfect-web-development-environment-for-your-new-mac)
+-   [sourabhbajaj.com/mac-setup/](https://sourabhbajaj.com/mac-setup/)
+-   [github.com/nicolashery/mac-dev-setup](https://github.com/nicolashery/mac-dev-setup)
+-   [stuartellis.name/articles/mac-setup](https://www.stuartellis.name/articles/mac-setup/)
+-   [michaeluloth.com/how-to-set-up-a-mac-for-web-development](https://www.michaeluloth.com/how-to-set-up-a-mac-for-web-development)
+-   [mallinson.ca/posts/5/the-perfect-web-development-environment-for-your-new-mac](https://mallinson.ca/posts/5/the-perfect-web-development-environment-for-your-new-mac)
