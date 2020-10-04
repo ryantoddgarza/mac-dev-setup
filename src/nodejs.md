@@ -30,7 +30,7 @@ command -v nvm
 ```
 which should output ``nvm`` if the installation was successful.
 
-### Basic usage
+#### Basic usage
 
 ```sh
 nvm ls                          # List installed versions

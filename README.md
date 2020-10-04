@@ -535,7 +535,7 @@ Verify installation:
 
 which should output `nvm` if the installation was successful.
 
-### Basic usage
+#### Basic usage
 
     nvm ls                          # List installed versions
     nvm ls-remote                   # List versions available to be installed
