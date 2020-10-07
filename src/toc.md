@@ -7,7 +7,6 @@
 - [Terminal](#terminal)
     - [iTerm2](#iterm2)
     - [Zsh](#zsh)
-    - [Oh My Zsh](#oh-my-zsh)
     - [Tmux](#tmux)
 - [Git](#git)
     - [SSH Config for GitHub](#ssh-config-for-github)

@@ -11,7 +11,6 @@ Table of Contents
 -   [Terminal](#terminal)
     -   [iTerm2](#iterm2)
     -   [Zsh](#zsh)
-    -   [Oh My Zsh](#oh-my-zsh)
     -   [Tmux](#tmux)
 -   [Git](#git)
     -   [SSH Config for GitHub](#ssh-config-for-github)
@@ -205,11 +204,11 @@ useful features.
 
 #### Installation
 
-Use Homebrew to download and install:
+Install iTerm2 via Homebrew:
 
     brew cask install iterm2
 
-#### Fonts
+#### Font
 
 To enable italics rendering, run:
 
@@ -226,6 +225,8 @@ Set the font in iTerm2’s preferences and change the size to 13pt.
 
 #### Color Theme
 
+*DEPRECATED recommendation*
+
 Download `Tender.itermcolors` from
 [github.com/tombell/tender-iterm2](https://github.com/tombell/tender-iterm2).
 Go to *Preferences &gt; Profiles &gt; Colors* and select *Import…* from
@@ -240,52 +241,55 @@ recommended to use zsh over bash. It’s also highly recommended to
 install a framework with zsh as it makes dealing with configuration,
 plugins and themes a lot nicer.
 
-Install zsh using Homebrew:
+#### Installation
+
+Install zsh via Homebrew:
 
     brew install zsh
 
-The configuration file for zsh is called .zshrc and lives in your home
-folder (\~/.zshrc).
+#### Configuration
 
-### Oh My Zsh
+The main configuration file for zsh is *.zshrc* in the user home folder.
+Create, modify, or copy from
+[github.com/ryantoddgarza/dotfiles](https://github.com/ryantoddgarza/dotfiles).
 
-*This is a temporary recommendation until a solid .zshrc is built up.*
+To apply any configuration changes either start new shell instance or
+run `source ~/.zshrc`.
+
+Other configuration files may be necessary including *.zshenv,
+.zprofile, .zshlogin, .zlogin, .zlogout,* as well as imported files such
+as *.aliasrc*.
+
+##### Oh My Zsh
+
+A popular choice if you have no existing configurations.
 
 [Oh My Zsh](https://github.com/robbyrussell/oh-my-zsh) is an open
 source, community-driven framework for managing your zsh configuration.
 It comes with a bunch of features out of the box and improves your
 terminal experience.
 
-Install Oh My Zsh:
+#### Common issues
 
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+##### Insecure directories fix
 
-To apply any configuration changes you make you need to either start new
-shell instance or run:
-
-    source ~/.zshrc
-
-#### Insecure directories fix
-
-*TODO: Confirm that the second resolution prevents the need for the
-first fix.*
-
-1.  For the error `Insecure completion-dependent directories detected`,
-    add `ZSH_DISABLE_COMPFIX=true` to the top of your .zshrc file.
-    Reload the file by running `source .zshrc`.
-2.  For the error
-    `zsh compinit: insecure directories, run compaudit for list.`, run:
-
-<!-- -->
+For the error
+`zsh compinit: insecure directories, run compaudit for list.`, run:
 
     compaudit | xargs chmod g-w
 
 Details available at [Stephen Weiss’
 Blog](https://stephencharlesweiss.com/blog/2020-03-28/zsh-compinit-insecure-directories/).
 
+Another suggested solution is:
+
+For the error `Insecure completion-dependent directories detected`, add
+`ZSH_DISABLE_COMPFIX=true` to the top of your .zshrc file. Reload the
+file by running `source .zshrc`.
+
 ### Tmux
 
-[Tmux](https://github.com/tmux/tmux/wiki) is a terminal multiplexer: it
+[Tmux](https://github.com/tmux/tmux) is a terminal multiplexer: it
 enables a number of terminals to be created, accessed, and controlled
 from a single screen. tmux may be detached from a screen and continue
 running in the background, then later reattached.
@@ -296,9 +300,9 @@ Install tmux via Homebrew:
 
     brew install tmux
 
-#### Tmux config
+#### Configuration
 
-Clone the .tmux.conf file from
+Copy the .tmux.conf file from
 [github.com/ryantoddgarza/dotfiles](https://github.com/ryantoddgarza/dotfiles)
 into the home directory.
 
