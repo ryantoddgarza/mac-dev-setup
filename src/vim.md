@@ -6,57 +6,44 @@
 
 To install the latest version, use Homebrew:
 
-```
+```sh
 brew install vim
 ```
 
-### Vim config
+### Configuration
 
-Clone the approprite .vim files from [github.com/ryantoddgarza/dotfiles](https://github.com/ryantoddgarza/dotfiles) into the home directory.
+Even though stock vim is extremely powerful, some configuration may be desired to suit a personal workflow or to make learning more enjoyable to newcomers. Though customizing vim is entirely beyond the scope of this document, vim ships with incredible documentation. Enter `:help options` for help configuring vim's available options for example.
 
-### The Ultimate vimrc
+#### Some sensible configs
 
-*This is a temporary recommendation until a solid .vimrc is built up.*
+##### Display
 
-[The Ultimate vimrc](https://github.com/amix/vimrc) is a collection of vimrc configurations to make easy the usage of vim.
-
-To download the The Ultimate vimrc, you need to install the git client. If you need install it, see the [Git section](#git).
-
-Download the vimrc files:
+In `.vimrc` add:
 
 ```
-git clone https://github.com/amix/vimrc.git ~/.vim_runtime
+set number " Display line numbers
+set backspace=2 " Backspace behaves like other applications
 ```
 
-To install the complete version, run:
+##### Color scheme
 
-```
-sh ~/.vim_runtime/install_awesome_vimrc.sh
-```
-
-To install the basic version, run:
-
-```
-sh ~/.vim_runtime/install_basic_vimrc.sh
-```
-
-To update the vimrc scripts, run:
-
-```
-cd ~/.vim_runtime && git pull --rebase && cd -
-```
-
-#### My Configs
-
-After you have installed the setup, you can create `~/.vim_runtime/my_configs.vim` to fill in any extra configurations.
-
-### Color Scheme
-
-Download `monokai.vim` from [github.com/crusoexia/vim-monokai](https://github.com/crusoexia/vim-monokai) and add it to the `~/.vim/colors` directory. If not already in the `.vimrc` file, add `colorscheme monokai`.
+Download `monokai.vim` from [github.com/crusoexia/vim-monokai](https://github.com/crusoexia/vim-monokai) and add it to the `~/.vim/colors` directory. Add `colorscheme monokai` to `.vimrc`.
 
 More useful color schemes at [github.com/rafi/awesome-vim-colorschemes](https://github.com/rafi/awesome-vim-colorschemes).
 
+#### Config from dotfiles
+
+Clone the appropriate *.vim\** files from [github.com/ryantoddgarza/dotfiles](https://github.com/ryantoddgarza/dotfiles) into the home directory.
+
+#### The Ultimate vimrc config
+
+A popular choice if you have no existing configurations.
+
+[The Ultimate vimrc](https://github.com/amix/vimrc) is a collection of vimrc configurations to make easy the usage of vim.
+
 ### Plugins
+
+Plugins are packages of Vim config code that can add functionality, mappings, and commands to your Vim as well as add support for new programming languages. My [.gitmodules](https://github.com/ryantoddgarza/dotfiles/blob/master/.gitmodules) are a versioned resource for my installed plugins. Among them are:
 
 - [ale](https://github.com/dense-analysis/ale): Check syntax in Vim asynchronously and fix files, with Language Server Protocol (LSP) support.
 - [auto-pairs](https://github.com/jiangmiao/auto-pairs): Insert or delete brackets, parens, quotes in pair.
@@ -68,5 +55,6 @@ More useful color schemes at [github.com/rafi/awesome-vim-colorschemes](https://
 - [vim-jsx-pretty](https://github.com/MaxMEllon/vim-jsx-pretty): JSX and TSX syntax pretty highlighting for vim.
 - [vim-prettier](https://github.com/prettier/vim-prettier): A vim plugin wrapper for prettier, pre-configured with custom default prettier settings.
 - [vim-surround](https://github.com/tpope/vim-surround): Quoting/parenthesizing made simple.
+- [vim-repeat](https://github.com/tpope/vim-repeat): Enable repeating supported plugin maps with "."
 - [vim-vinegar](https://github.com/tpope/vim-vinegar): Combine with netrw to create a delicious salad dressing.
 
