@@ -306,6 +306,16 @@ Copy the .tmux.conf file from
 [github.com/ryantoddgarza/dotfiles](https://github.com/ryantoddgarza/dotfiles)
 into the home directory.
 
+### Useful additions
+
+-   [Tree](http://mama.indstate.edu/users/ice/tree/) is a recursive
+    directory listing command that produces a depth indented listing of
+    files.
+
+Install with Homebrew:
+
+    brew install tree
+
 Git
 ---
 
