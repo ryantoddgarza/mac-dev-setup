@@ -39,7 +39,7 @@ Download `Tender.itermcolors` from [github.com/tombell/tender-iterm2](https://gi
 
 ### Zsh
 
-The Z shell (also known as zsh) is a Unix shell that is built on top of bash (the default shell for macOS) with additional features. It's recommended to use zsh over bash. It's also highly recommended to install a framework with zsh as it makes dealing with configuration, plugins and themes a lot nicer.
+[Zsh](https://www.zsh.org/) is a UNIX command interpreter (shell) usable as an interactive login shell and as a shell script command processor. Zsh has command line editing, builtin spelling correction, programmable command completion, shell functions (with autoloading), a history mechanism, and a host of other features.
 
 #### Installation
 
@@ -51,11 +51,9 @@ brew install zsh
 
 #### Configuration
 
-The main configuration file for zsh is *.zshrc* in the user home folder. Create, modify, or copy from [github.com/ryantoddgarza/dotfiles](https://github.com/ryantoddgarza/dotfiles).
+The main configuration file for zsh is *.zshrc* in the user home folder. Create, modify, or copy from [github.com/ryantoddgarza/dotfiles](https://github.com/ryantoddgarza/dotfiles). Other configuration files may be necessary such as *.zshenv*, *.zprofile*, *.zshlogin*, *.zlogin*, and *.zlogout*.
 
-To apply any configuration changes either start new shell instance or run `source ~/.zshrc`.
-
-Other configuration files may be necessary including *.zshenv, .zprofile, .zshlogin, .zlogin, .zlogout,* as well as imported files such as *.aliasrc*.
+To apply configuration changes to an existing session, simply re-invoke Zsh by running `zsh`. This will source any of the above mentioned files that exist [in a specified order](http://zsh.sourceforge.net/Doc/Release/Files.html#Files). To source only a specific file, *.zshrc* for example, run `source ~/.zshrc`.
 
 ##### Oh My Zsh
 
