@@ -1,0 +1,7 @@
+{
+  "scripts": {
+    "build": "npm run clean && npm run make",
+    "clean": ": > README.md",
+    "make": "cat concat | xargs cat >> README.md"
+  }
+}

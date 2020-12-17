@@ -1,15 +1,9 @@
 # Contributing
 
-## Dependencies
-
-- [make](https://www.gnu.org/software/make/manual/make.html)
-- [Pandoc](https://pandoc.org/)
-
 ## Architecture
 
 - `/src/` - Source files for the README.
-- `/Makefile` - Tells `make` how to compile the source files.
-- `/concat.yaml` - Defines the order in which the files are concatenated.
+- `/concat` - Defines the order in which the files are concatenated.
 
 ## Example Addition
 
@@ -26,6 +20,6 @@
 
 - Link to heading
 
-4. Add file path to `/concat.yaml`
-5. Run `make` from the command line
+4. Add file path to `/concat`
+5. Run `npm run build` from the command line
 6. Push changes
