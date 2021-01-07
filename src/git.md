@@ -100,7 +100,7 @@ git config --global core.excludesfile ~/.gitignore
 
 ### Git GUIs
 
-I don't use them but they exist.
+They exist if you need them.
 
 - [Sourcetree](https://www.sourcetreeapp.com/)
 - [GitHub Desktop](https://desktop.github.com/)

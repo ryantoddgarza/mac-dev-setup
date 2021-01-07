@@ -2,48 +2,48 @@
 
 ### Initial Setup
 
-The first thing you should do is update your OS to the latest version to have a more secure OS. To do that go: *Apple menu () > About This Mac > Software Update*.
+The first thing you should do is update your OS to the latest version to have a more secure OS. To do that go: _Apple menu () > About This Mac > Software Update_.
 
 ### Users & Groups
 
-- Enable *Show fast user switching menu* and select desired display option.
+- Enable _Show fast user switching menu_ and select desired display option.
 - Set up Password, Apple ID, Picture, etc.
 
 ### Keyboard
 
-Open *System Preferences > Keyboard*.
+Open _System Preferences > Keyboard_.
 
-- Set *Key Repeat* to *Fast* and Delay Until Repeat to one notch below *Short*.
-- Remap *CapsLock* to *Esc* for quicker Vim mode switching. Click the *Modifier Keys...* button. In the dialog you can choose to map the caps lock key to escape.
+- Set _Key Repeat_ to _Fast_ and Delay Until Repeat to one notch below _Short_.
+- Remap _CapsLock_ to _Esc_ for quicker Vim mode switching. Click the _Modifier Keys..._ button. In the dialog you can choose to map the caps lock key to escape.
 
 #### Filco Majestouch
 
-For keyboards not set up for macOS, swap the *Option* and *Command* keys. Open *System Preferences > Keyboard > Modifier Keys...* and remap both keys.
+For keyboards not set up for macOS, swap the _Option_ and _Command_ keys. Open _System Preferences > Keyboard > Modifier Keys..._ and remap both keys.
 
 ### Trackpad
 
 - Point & Click
-    - Enable *Tap to click with one finger*
+  - Enable _Tap to click with one finger_
 - Scroll & Zoom
-    - Uncheck all except *Zoom in or out* and *Scroll direction: Natural*
+  - Uncheck all except _Zoom in or out_ and _Scroll direction: Natural_
 - More Gestures
-    - Uncheck *Notification Center*
+  - Uncheck _Notification Center_
 
 ### Display
 
-- Uncheck *Automatically adjust brightness*
-- Uncheck *Show mirroring options in the menu bar when available*
+- Uncheck _Automatically adjust brightness_
+- Uncheck _Show mirroring options in the menu bar when available_
 
 ### Dock
 
 - Uncheck
-    - *Double-click a window's title bar to*
-    - *Animate opening applications*
-    - *Show recent applications in Dock*
+  - _Double-click a window's title bar to_
+  - _Animate opening applications_
+  - _Show recent applications in Dock_
 - Check
-    - *Automatically hide and show the Dock*
+  - _Automatically hide and show the Dock_
 
-Remove *workspace auto-switching* by running:
+Remove _workspace auto-switching_ by running:
 
 ```
 defaults write com.apple.dock workspaces-auto-swoosh -bool NO
@@ -54,43 +54,43 @@ killall Dock
 
 Prevent Spaces from rearranging.
 
-Open *System Preferences > Mission Control* and uncheck *Automatically rearrange spaces based on most recent use*.
+Open _System Preferences > Mission Control_ and uncheck _Automatically rearrange spaces based on most recent use_.
 
 ### Spotlight
 
 By default, Spotlight sends queries to Apple. Unless you want this feature, turn it off.
 
-Open *System Preferences > Spotlight > Search Results* and deselect *Spotlight Suggestions*.
+Open _System Preferences > Spotlight > Search Results_ and deselect _Spotlight Suggestions_.
 
 ### Accessibility
 
-- *Display* Check *Reduce transparency*
+- _Display_ Check _Reduce transparency_
 
 ### Sound
 
-- Disable *Play user interface sound effects*
+- Disable _Play user interface sound effects_
 
 ### Finder
 
 - General
-    - Change New finder window show to open in your *Home Directory*
+  - Change New finder window show to open in your _Home Directory_
 - Sidebar
-    - Add Home and your Code Directory
-    - Uncheck all Shared boxes
-    - Uncheck *Tags*
+  - Add Home and your Code Directory
+  - Uncheck all Shared boxes
+  - Uncheck _Tags_
 
 ### Menu Bar
 
-- Remove the *Display* and *Bluetooth* icons
-- Change battery to *Show percentage*
+- Remove the _Display_ and _Bluetooth_ icons
+- Change battery to _Show percentage_
 
 ### Desktop
 
-Right click on the *Desktop* and select *Show view options*.
+Right click on the _Desktop_ and select _Show view options_.
 
-- Select *Sort by: Snap to Grid*
-- Set *Icon Size* to *48x48*
-- Set *Label position* to *Right*
+- Select _Sort by: Snap to Grid_
+- Set _Icon Size_ to _48x48_
+- Set _Label position_ to _Right_
 
 ### User Defaults
 

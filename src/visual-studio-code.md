@@ -5,7 +5,7 @@
 To install the latest version, use Homebrew:
 
 ```
-brew cask install visual-studio-code
+brew install --cask visual-studio-code
 ```
 
 ### Launching from the command line
@@ -34,7 +34,7 @@ Install Neovim via Homebrew:
 brew install neovim
 ```
 
-- Install the Neo Vim extension via VSCode's *Extensions* tab
+- Install the Neo Vim extension via VSCode's _Extensions_ tab
 - Set the path in the Neo Vim extension settings to `/usr/local/bin/nvim`
 - Restart Visual Studio Code
 

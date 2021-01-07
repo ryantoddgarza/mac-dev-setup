@@ -73,3 +73,13 @@ Install with Homebrew:
 brew install sass/sass/sass
 ```
 
+### Tree
+
+- [Tree](http://mama.indstate.edu/users/ice/tree/) is a recursive directory listing command that produces a depth indented listing of files.
+
+Install with Homebrew:
+
+```sh
+brew install tree
+```
+

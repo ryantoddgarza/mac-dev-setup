@@ -7,20 +7,20 @@
 - [Xcode](#xcode)
 - [Homebrew](#homebrew)
 - [Terminal](#terminal)
-    - [iTerm2](#iterm2)
-    - [Zsh](#zsh)
-    - [Tmux](#tmux)
+  - [iTerm2](#iterm2)
+  - [Zsh](#zsh)
+  - [Tmux](#tmux)
 - [Git](#git)
-    - [SSH Config for GitHub](#ssh-config-for-github)
-    - [Git Ignore (global](#git-ignore-global)
-    - [Git GUIs](#git-guis)
+  - [SSH Config for GitHub](#ssh-config-for-github)
+  - [Git Ignore (global](#git-ignore-global)
+  - [Git GUIs](#git-guis)
 - [Vim](#vim)
-    - [Plugins](#plugins)
+  - [Plugins](#plugins)
 - [Node.js](#nodejs)
 - [CLI Extensions](#cli-extensions)
-    - [Browsersync](#browsersync)
-    - [rsync](#rsync)
-    - [SASS](#sass)
+  - [Browsersync](#browsersync)
+  - [rsync](#rsync)
+  - [SASS](#sass)
 - [Apps](#apps)
 - [References](#references)
 
@@ -28,48 +28,48 @@
 
 ### Initial Setup
 
-The first thing you should do is update your OS to the latest version to have a more secure OS. To do that go: *Apple menu () > About This Mac > Software Update*.
+The first thing you should do is update your OS to the latest version to have a more secure OS. To do that go: _Apple menu () > About This Mac > Software Update_.
 
 ### Users & Groups
 
-- Enable *Show fast user switching menu* and select desired display option.
+- Enable _Show fast user switching menu_ and select desired display option.
 - Set up Password, Apple ID, Picture, etc.
 
 ### Keyboard
 
-Open *System Preferences > Keyboard*.
+Open _System Preferences > Keyboard_.
 
-- Set *Key Repeat* to *Fast* and Delay Until Repeat to one notch below *Short*.
-- Remap *CapsLock* to *Esc* for quicker Vim mode switching. Click the *Modifier Keys...* button. In the dialog you can choose to map the caps lock key to escape.
+- Set _Key Repeat_ to _Fast_ and Delay Until Repeat to one notch below _Short_.
+- Remap _CapsLock_ to _Esc_ for quicker Vim mode switching. Click the _Modifier Keys..._ button. In the dialog you can choose to map the caps lock key to escape.
 
 #### Filco Majestouch
 
-For keyboards not set up for macOS, swap the *Option* and *Command* keys. Open *System Preferences > Keyboard > Modifier Keys...* and remap both keys.
+For keyboards not set up for macOS, swap the _Option_ and _Command_ keys. Open _System Preferences > Keyboard > Modifier Keys..._ and remap both keys.
 
 ### Trackpad
 
 - Point & Click
-    - Enable *Tap to click with one finger*
+  - Enable _Tap to click with one finger_
 - Scroll & Zoom
-    - Uncheck all except *Zoom in or out* and *Scroll direction: Natural*
+  - Uncheck all except _Zoom in or out_ and _Scroll direction: Natural_
 - More Gestures
-    - Uncheck *Notification Center*
+  - Uncheck _Notification Center_
 
 ### Display
 
-- Uncheck *Automatically adjust brightness*
-- Uncheck *Show mirroring options in the menu bar when available*
+- Uncheck _Automatically adjust brightness_
+- Uncheck _Show mirroring options in the menu bar when available_
 
 ### Dock
 
 - Uncheck
-    - *Double-click a window's title bar to*
-    - *Animate opening applications*
-    - *Show recent applications in Dock*
+  - _Double-click a window's title bar to_
+  - _Animate opening applications_
+  - _Show recent applications in Dock_
 - Check
-    - *Automatically hide and show the Dock*
+  - _Automatically hide and show the Dock_
 
-Remove *workspace auto-switching* by running:
+Remove _workspace auto-switching_ by running:
 
 ```
 defaults write com.apple.dock workspaces-auto-swoosh -bool NO
@@ -80,43 +80,43 @@ killall Dock
 
 Prevent Spaces from rearranging.
 
-Open *System Preferences > Mission Control* and uncheck *Automatically rearrange spaces based on most recent use*.
+Open _System Preferences > Mission Control_ and uncheck _Automatically rearrange spaces based on most recent use_.
 
 ### Spotlight
 
 By default, Spotlight sends queries to Apple. Unless you want this feature, turn it off.
 
-Open *System Preferences > Spotlight > Search Results* and deselect *Spotlight Suggestions*.
+Open _System Preferences > Spotlight > Search Results_ and deselect _Spotlight Suggestions_.
 
 ### Accessibility
 
-- *Display* Check *Reduce transparency*
+- _Display_ Check _Reduce transparency_
 
 ### Sound
 
-- Disable *Play user interface sound effects*
+- Disable _Play user interface sound effects_
 
 ### Finder
 
 - General
-    - Change New finder window show to open in your *Home Directory*
+  - Change New finder window show to open in your _Home Directory_
 - Sidebar
-    - Add Home and your Code Directory
-    - Uncheck all Shared boxes
-    - Uncheck *Tags*
+  - Add Home and your Code Directory
+  - Uncheck all Shared boxes
+  - Uncheck _Tags_
 
 ### Menu Bar
 
-- Remove the *Display* and *Bluetooth* icons
-- Change battery to *Show percentage*
+- Remove the _Display_ and _Bluetooth_ icons
+- Change battery to _Show percentage_
 
 ### Desktop
 
-Right click on the *Desktop* and select *Show view options*.
+Right click on the _Desktop_ and select _Show view options_.
 
-- Select *Sort by: Snap to Grid*
-- Set *Icon Size* to *48x48*
-- Set *Label position* to *Right*
+- Select _Sort by: Snap to Grid_
+- Set _Icon Size_ to _48x48_
+- Set _Label position_ to _Right_
 
 ### User Defaults
 
@@ -183,7 +183,7 @@ If everything is good, you should see no warnings, and a message that you are "r
 Install iTerm2 via Homebrew:
 
 ```sh
-brew cask install iterm2
+brew install --cask iterm2
 ```
 
 #### Font
@@ -198,18 +198,19 @@ tic /tmp/xterm-256color.terminfo
 Install preferred font:
 
 ```sh
-brew tap homebrew/cask-fonts && brew cask install font-fira-code
-brew tap homebrew/cask-fonts && brew cask install font-meslo-lg
-brew tap homebrew/cask-fonts && brew cask install font-source-code-pro
+brew tap homebrew/cask-fonts
+brew install --cask font-fira-code
+brew install --cask font-meslo-lg
+brew install --cask font-source-code-pro
 ```
 
 Set the font in iTerm2's preferences and change the size to 13pt.
 
 #### Color Theme
 
-*DEPRECATED recommendation*
+_DEPRECATED recommendation_
 
-Download `Tender.itermcolors` from [github.com/tombell/tender-iterm2](https://github.com/tombell/tender-iterm2). Go to *Preferences > Profiles > Colors* and select *Import...* from the *Color Presets...* dropdown. Import the theme and select it from the *Color Presets...* dropdown.
+Download `Tender.itermcolors` from [github.com/tombell/tender-iterm2](https://github.com/tombell/tender-iterm2). Go to _Preferences > Profiles > Colors_ and select _Import..._ from the _Color Presets..._ dropdown. Import the theme and select it from the _Color Presets..._ dropdown.
 
 ### Zsh
 
@@ -225,9 +226,9 @@ brew install zsh
 
 #### Configuration
 
-The main configuration file for zsh is *.zshrc* in the user home folder. Create, modify, or copy from [github.com/ryantoddgarza/dotfiles](https://github.com/ryantoddgarza/dotfiles). Other configuration files may be necessary such as *.zshenv*, *.zprofile*, *.zshlogin*, *.zlogin*, and *.zlogout*.
+The main configuration file for zsh is _.zshrc_ in the user home folder. Create, modify, or copy from [github.com/ryantoddgarza/dotfiles](https://github.com/ryantoddgarza/dotfiles). Other configuration files may be necessary such as _.zshenv_, _.zprofile_, _.zshlogin_, _.zlogin_, and _.zlogout_.
 
-To apply configuration changes to an existing session, simply re-invoke Zsh by running `zsh`. This will source any of the above mentioned files that exist [in a specified order](http://zsh.sourceforge.net/Doc/Release/Files.html#Files). To source only a specific file, *.zshrc* for example, run `source ~/.zshrc`.
+To apply configuration changes to an existing session, simply re-invoke Zsh by running `zsh`. This will source any of the above mentioned files that exist [in a specified order](http://zsh.sourceforge.net/Doc/Release/Files.html#Files). To source only a specific file, _.zshrc_ for example, run `source ~/.zshrc`.
 
 ##### Oh My Zsh
 
@@ -266,16 +267,6 @@ brew install tmux
 #### Configuration
 
 Copy the .tmux.conf file from [github.com/ryantoddgarza/dotfiles](https://github.com/ryantoddgarza/dotfiles) into the home directory.
-
-### Useful additions
-
-- [Tree](http://mama.indstate.edu/users/ice/tree/) is a recursive directory listing command that produces a depth indented listing of files.
-
-Install with Homebrew:
-
-```sh
-brew install tree
-```
 
 ## Git
 
@@ -379,7 +370,7 @@ git config --global core.excludesfile ~/.gitignore
 
 ### Git GUIs
 
-I don't use them but they exist.
+They exist if you need them.
 
 - [Sourcetree](https://www.sourcetreeapp.com/)
 - [GitHub Desktop](https://desktop.github.com/)
@@ -419,7 +410,7 @@ More useful color schemes at [github.com/rafi/awesome-vim-colorschemes](https://
 
 #### Config from dotfiles
 
-Clone the appropriate *.vim\** files from [github.com/ryantoddgarza/dotfiles](https://github.com/ryantoddgarza/dotfiles) into the home directory.
+Clone the appropriate _.vim\*_ files from [github.com/ryantoddgarza/dotfiles](https://github.com/ryantoddgarza/dotfiles) into the home directory.
 
 #### The Ultimate vimrc config
 
@@ -469,12 +460,14 @@ Install **Node Version Manager** with cURL.
 ```sh
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.36.0/install.sh | bash
 ```
+
 Verify installation:
 
 ```sh
 command -v nvm
 ```
-which should output ``nvm`` if the installation was successful.
+
+which should output `nvm` if the installation was successful.
 
 #### Basic usage
 
@@ -492,7 +485,7 @@ nvm alias default <version>     # Set default version with alias
 
 #### Fix the "Missing write access" error when using npm
 
-*Pay attention to the folder listed by the error message. If it’s different, update the chown command accordingly.*
+_Pay attention to the folder listed by the error message. If it’s different, update the chown command accordingly._
 
 Run this command:
 
@@ -575,6 +568,16 @@ Install with Homebrew:
 brew install sass/sass/sass
 ```
 
+### Tree
+
+- [Tree](http://mama.indstate.edu/users/ice/tree/) is a recursive directory listing command that produces a depth indented listing of files.
+
+Install with Homebrew:
+
+```sh
+brew install tree
+```
+
 ## Apps
 
 A list of apps that are generally good to use and can come in handy in day to day tasks.
@@ -586,13 +589,14 @@ A list of apps that are generally good to use and can come in handy in day to da
 Install with Homebrew:
 
 ```
-brew cask install google-chrome
+brew install --cask google-chrome
 ```
 
 ### Productivity
 
 - [Dropbox](https://www.dropbox.com/) File syncing to the cloud. It syncs files across all devices (laptop, mobile, tablet), and serves as a backup.
 - [Pandoc](https://pandoc.org/) a universal document converter.
+
 ## References
 
 Inspiration for this document.

@@ -23,12 +23,14 @@ Install **Node Version Manager** with cURL.
 ```sh
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.36.0/install.sh | bash
 ```
+
 Verify installation:
 
 ```sh
 command -v nvm
 ```
-which should output ``nvm`` if the installation was successful.
+
+which should output `nvm` if the installation was successful.
 
 #### Basic usage
 
@@ -46,7 +48,7 @@ nvm alias default <version>     # Set default version with alias
 
 #### Fix the "Missing write access" error when using npm
 
-*Pay attention to the folder listed by the error message. If it’s different, update the chown command accordingly.*
+_Pay attention to the folder listed by the error message. If it’s different, update the chown command accordingly._
 
 Run this command:
 

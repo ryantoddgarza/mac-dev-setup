@@ -33,7 +33,7 @@ More useful color schemes at [github.com/rafi/awesome-vim-colorschemes](https://
 
 #### Config from dotfiles
 
-Clone the appropriate *.vim\** files from [github.com/ryantoddgarza/dotfiles](https://github.com/ryantoddgarza/dotfiles) into the home directory.
+Clone the appropriate _.vim\*_ files from [github.com/ryantoddgarza/dotfiles](https://github.com/ryantoddgarza/dotfiles) into the home directory.
 
 #### The Ultimate vimrc config
 

@@ -9,7 +9,7 @@
 Install iTerm2 via Homebrew:
 
 ```sh
-brew cask install iterm2
+brew install --cask iterm2
 ```
 
 #### Font
@@ -24,18 +24,19 @@ tic /tmp/xterm-256color.terminfo
 Install preferred font:
 
 ```sh
-brew tap homebrew/cask-fonts && brew cask install font-fira-code
-brew tap homebrew/cask-fonts && brew cask install font-meslo-lg
-brew tap homebrew/cask-fonts && brew cask install font-source-code-pro
+brew tap homebrew/cask-fonts
+brew install --cask font-fira-code
+brew install --cask font-meslo-lg
+brew install --cask font-source-code-pro
 ```
 
 Set the font in iTerm2's preferences and change the size to 13pt.
 
 #### Color Theme
 
-*DEPRECATED recommendation*
+_DEPRECATED recommendation_
 
-Download `Tender.itermcolors` from [github.com/tombell/tender-iterm2](https://github.com/tombell/tender-iterm2). Go to *Preferences > Profiles > Colors* and select *Import...* from the *Color Presets...* dropdown. Import the theme and select it from the *Color Presets...* dropdown.
+Download `Tender.itermcolors` from [github.com/tombell/tender-iterm2](https://github.com/tombell/tender-iterm2). Go to _Preferences > Profiles > Colors_ and select _Import..._ from the _Color Presets..._ dropdown. Import the theme and select it from the _Color Presets..._ dropdown.
 
 ### Zsh
 
@@ -51,9 +52,9 @@ brew install zsh
 
 #### Configuration
 
-The main configuration file for zsh is *.zshrc* in the user home folder. Create, modify, or copy from [github.com/ryantoddgarza/dotfiles](https://github.com/ryantoddgarza/dotfiles). Other configuration files may be necessary such as *.zshenv*, *.zprofile*, *.zshlogin*, *.zlogin*, and *.zlogout*.
+The main configuration file for zsh is _.zshrc_ in the user home folder. Create, modify, or copy from [github.com/ryantoddgarza/dotfiles](https://github.com/ryantoddgarza/dotfiles). Other configuration files may be necessary such as _.zshenv_, _.zprofile_, _.zshlogin_, _.zlogin_, and _.zlogout_.
 
-To apply configuration changes to an existing session, simply re-invoke Zsh by running `zsh`. This will source any of the above mentioned files that exist [in a specified order](http://zsh.sourceforge.net/Doc/Release/Files.html#Files). To source only a specific file, *.zshrc* for example, run `source ~/.zshrc`.
+To apply configuration changes to an existing session, simply re-invoke Zsh by running `zsh`. This will source any of the above mentioned files that exist [in a specified order](http://zsh.sourceforge.net/Doc/Release/Files.html#Files). To source only a specific file, _.zshrc_ for example, run `source ~/.zshrc`.
 
 ##### Oh My Zsh
 
@@ -92,14 +93,4 @@ brew install tmux
 #### Configuration
 
 Copy the .tmux.conf file from [github.com/ryantoddgarza/dotfiles](https://github.com/ryantoddgarza/dotfiles) into the home directory.
-
-### Useful additions
-
-- [Tree](http://mama.indstate.edu/users/ice/tree/) is a recursive directory listing command that produces a depth indented listing of files.
-
-Install with Homebrew:
-
-```sh
-brew install tree
-```
 

@@ -9,10 +9,11 @@ A list of apps that are generally good to use and can come in handy in day to da
 Install with Homebrew:
 
 ```
-brew cask install google-chrome
+brew install --cask google-chrome
 ```
 
 ### Productivity
 
 - [Dropbox](https://www.dropbox.com/) File syncing to the cloud. It syncs files across all devices (laptop, mobile, tablet), and serves as a backup.
 - [Pandoc](https://pandoc.org/) a universal document converter.
+
